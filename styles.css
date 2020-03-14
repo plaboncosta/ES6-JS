@@ -1,0 +1,26 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+#set-list {
+    margin: 0;
+    padding: 0;
+}
+
+#set-list .list {
+    list-style: none;
+    background-color: green;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    width: 200px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgb(0, 0, 0) 1px 2px 4px;
+    cursor: pointer;
+}
+
+#set-list .list:hover {
+    transition: 1s;
+    background-color: rgb(49, 44, 44);
+    counter-reset: #fff;
+}

@@ -44,7 +44,7 @@ let car2 = {
 weakSet.add(car);
 weakSet.add(car2);
 // weakSet.delete(car);
-console.log(weakSet);
+// console.log(weakSet);
 
 
 let weakMap = new WeakMap();

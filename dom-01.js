@@ -84,3 +84,8 @@
 //     oddList[i].style.backgroundColor = '#f4f4f4';
 //     evenList[i].style.backgroundColor = '#ccc';
 // }
+
+setTimeout(() => {
+    let divLength = document.getElementsByTagName('div');
+    divLength[divLength.length - 2].remove();
+}, 1000);

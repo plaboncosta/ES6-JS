@@ -1,8 +1,8 @@
 "use strict";
 
-let button = document.getElementById('eventButton');
-button.style.display = 'none';
-button.addEventListener('click', e => {
+// let button = document.getElementById('eventButton');
+// button.style.display = 'none';
+// button.addEventListener('click', e => {
     // console.log(e.target);
     // console.log(e.target.id);
     // console.log(e.target.className);
@@ -21,4 +21,4 @@ button.addEventListener('click', e => {
     // console.log(e.ctrlKey);
     // console.log(e.shiftKey);
     // console.log(e.altKey);
-});
+// });

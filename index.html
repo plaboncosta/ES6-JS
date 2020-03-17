@@ -8,10 +8,28 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hi Plabon</h1>
     <div>
-        <h2>My Set List <span id="set-list-total"></span></h2>
+        <h2 class="dis-none">My Set List <span id="set-list-total"></span></h2>
         <ul id="set-list"></ul>
+    </div>
+
+    <div class="todo-box">
+        <h3 class="todo-title" id="todo-title">Add Items <span class="dis-none">12</span></h3>
+        <form action="">
+            <div class="todo-form">
+                <input type="text" name="item" id="item"  class="todo-input focus-out" required>
+                <button type="submit" class="todo-button focus-out">Submit</button>
+            </div>
+        </form>
+        <div class="todo-item-list">
+            <h3 class="todo-title">Item List</h3>
+            <ul class="todo-item-ul">
+                <li class="todo-item-li">Item One</li>
+                <li class="todo-item-li">Item Two</li>
+                <li class="todo-item-li">Item Three</li>
+                <li class="todo-item-li">Item Four</li>
+            </ul>
+        </div>
     </div>
 
     <script src="./arrya_method.js"></script>
@@ -21,5 +39,6 @@
     <script src="./set_map.js"></script>
     <script src="./promises.js"></script>
     <script src="./generator.js"></script>
+    <script src="./dom-01.js"></script>
 </body>
 </html>

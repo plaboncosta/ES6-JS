@@ -66,7 +66,8 @@ function getPost() {
         posts.forEach((item, index) => {
             output += `<li class='list'>${index + 1}. ${item.title}</li>`;
         });
-        document.getElementById('set-list').innerHTML = output;
+        // document.getElementById('set-list').innerHTML = output;
+        // document.getElementById('set-list-total').innerHTML = `(${posts.length})`;
     }, 1000);
 }
 

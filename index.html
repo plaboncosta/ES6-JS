@@ -13,8 +13,8 @@
         <ul id="set-list"></ul>
     </div>
 
-    <div class="todo-box">
-        <h3 class="todo-title" id="todo-title">Add Items <span class="dis-none">12</span></h3>
+    <div class="todo-box" id="todo-box">
+        <h3 class="todo-title" id="todo-title">Add Items</h3>
         <form action="">
             <div class="todo-form">
                 <input type="text" name="item" id="item"  class="todo-input focus-out" required>
@@ -23,12 +23,15 @@
         </form>
         <div class="todo-item-list">
             <h3 class="todo-title">Item List</h3>
-            <ul class="todo-item-ul">
+            <ul class="todo-item-ul" id="todo-item-ul">
                 <li class="todo-item-li">Item One</li>
-                <li class="todo-item-li">Item Two</li>
+                <li class="todo-item-li" id="todo-item-two">Item Two</li>
                 <li class="todo-item-li">Item Three</li>
                 <li class="todo-item-li">Item Four</li>
             </ul>
+            <button class="todo-button focus-out mt-10" id="eventButton">
+                Click Here
+            </button>
         </div>
     </div>
 
@@ -40,5 +43,7 @@
     <script src="./promises.js"></script>
     <script src="./generator.js"></script>
     <script src="./dom-01.js"></script>
+    <script src="./dom-02.js"></script>
+    <script src="./dom-03.js"></script>
 </body>
 </html>

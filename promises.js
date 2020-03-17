@@ -1,15 +1,15 @@
 "user strict";
 
 // Imediately Resolved 
-let myPromise = Promise.resolve({
-    name: 'Plabon',
-    age: 21,
-    profession: 'Software Dev',
-    friends: ['Ashik', 'Niren', 'Pranto']
-});
+// let myPromise = Promise.resolve({
+//     name: 'Plabon',
+//     age: 21,
+//     profession: 'Software Dev',
+//     friends: ['Ashik', 'Niren', 'Pranto']
+// });
 // let myPromise = Promise.reject({msg: 'Error Occured!'});
 
-// myPromise.then(res => console.log(res));
+// myPromise.then(res => console.log(res)); 
 // myPromise.catch(err => console.log(err));
 
 let getPromise = new Promise((resolve, reject) => {
@@ -66,8 +66,8 @@ function getPost() {
         posts.forEach((item, index) => {
             output += `<li class='list'>${index + 1}. ${item.title}</li>`;
         });
-        // document.getElementById('set-list').innerHTML = output;
-        // document.getElementById('set-list-total').innerHTML = `(${posts.length})`;
+        document.getElementById('set-list').innerHTML = output;
+        document.getElementById('set-list-total').innerHTML = `(${posts.length})`;
     }, 1000);
 }
 
@@ -97,14 +97,12 @@ const promise4 = fetch('https://jsonplaceholder.typicode.com/users').then(res =>
 // Promise.all([promise1, promise2, promise3, promise4])
 // .then(values => console.log(values));
 
-getPost();
-
-// Async Await
-async function init() {
-    await createPost({title: 'Third Post', body: 'This is post three'});
-    getPost();
-}
-init();
+//  Async Await
+// async function init() {
+//     await createPost({title: 'Third Post', body: 'This is post three'});
+//     getPost();
+// }
+// init();
 
 async function fetchData(url) {
     const res = await fetch(url);

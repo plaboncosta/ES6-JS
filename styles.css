@@ -14,6 +14,10 @@
     padding-top: 10px;
 }
 
+.mt-10{
+    margin-top: 10px;
+}
+
 .focus-out:focus {
     outline: none;
 }
@@ -31,11 +35,14 @@
     width: 200px;
     color: rgb(255, 255, 255);
     border-radius: 8px;
-    box-shadow: rgb(0, 0, 0) 1px 2px 4px;
+    -webkit-box-shadow: rgb(0, 0, 0) 1px 2px 4px;
+            box-shadow: rgb(0, 0, 0) 1px 2px 4px;
     cursor: pointer;
 }
 
 #set-list .list:hover {
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
     background-color: rgb(49, 44, 44);
     counter-reset: #fff;
@@ -48,7 +55,8 @@
     margin: 50px auto;
     max-width: 800px;
     padding: 20px;
-    box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
 
 }
 
@@ -60,8 +68,12 @@
 }
 
 .todo-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .todo-input, .todo-button {
@@ -94,6 +106,8 @@
 
 .todo-button:hover {
     background-color: rgb(8, 83, 168);
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -116,6 +130,11 @@
 .todo-item-li:last-child {
     border-bottom: 1px solid #eee;
 }
+
+::-moz-selection {
+    color: #fff;
+    background: rgb(8, 161, 207);
+  }
 
 ::selection {
     color: #fff;

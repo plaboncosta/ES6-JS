@@ -16,6 +16,6 @@ let g = generator();
 // console.log(g.next());
 // console.log(g.next());
 
-for(let val of g ) {
-    console.log(val);
-}
+// for(let val of g ) {
+//     console.log(val);
+// }

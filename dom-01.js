@@ -86,6 +86,6 @@
 // }
 
 setTimeout(() => {
-    // let divLength = document.getElementsByTagName('div');
-    // divLength[divLength.length - 2].remove();
+    let divLength = document.getElementsByTagName('div');
+    divLength[divLength.length - 2].remove();
 }, 1000);

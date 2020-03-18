@@ -65,10 +65,18 @@ const inputEventCall = e => {
 let form = document.querySelector('#todo-form');
 form.addEventListener('submit', e => {
     e.preventDefault();
-    let value = {};
+    let dataSet = {};
     for(let i = 0; i < form.length; i++) {
-        if (form[i].name) Object.assign(value, {[form[i].name]: form[i].value});
+        if (form[i].name) Object.assign(dataSet, {[form[i].name]: form[i].value});
     }
 
-    console.log(value);
+    let list = document.getElementById('todo-item-ul');
+    let beforeLi = document.querySelector('.todo-item-li:first-child');
+    let insertLi = document.createElement('li');
+    insertLi.className = 'todo-item-li';
+    const text = document.createTextNode(dataSet.item);
+    insertLi.appendChild(text);
+    
+    list.insertBefore(insertLi, beforeLi);
+    document.getElementById('item-list-count').innerText = `Item List (${list.children.length})`;
 });

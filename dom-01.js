@@ -85,7 +85,7 @@
 //     evenList[i].style.backgroundColor = '#ccc';
 // }
 
-setTimeout(() => {
-    let divLength = document.getElementsByTagName('div');
-    divLength[divLength.length - 2].remove();
-}, 1000);
+// setTimeout(() => {
+//     let divLength = document.getElementsByTagName('div');
+//     divLength[divLength.length - 2].remove();
+// }, 1000);

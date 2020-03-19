@@ -97,12 +97,19 @@ let searchBox = document.getElementById('search-box');
 searchBox.addEventListener('keyup', e => {
     const searchText = e.target.value.toLowerCase();
     // const items = list.getElementsByTagName('li');
+    let sum = 0;
     Array.from(list.children).forEach(item => {
         let listText = item.firstChild.textContent.toLowerCase();
         // if(listText.indexOf(searchText) != -1) item.style.display = 'block';
         // else item.style.display = 'none';
-        if(listText.includes(searchText)) item.style.display = 'block';
-        else item.style.display = 'none';
+        if(listText.includes(searchText)) {item.style.display = 'block'; if(!item.classList.contains('true')) item.classList.add('true');}
+        else {item.style.display = 'none'; item.classList.remove('true');}
+        if(item.classList.contains('true')) {
+            let count = list.querySelector('.true').children.length;
+            sum += count;
+            document.getElementById('item-list-count').innerText = `Item List (${sum})`;
+        } else document.getElementById('item-list-count').innerText = `Item List (${sum})`;
+
     });
 
     

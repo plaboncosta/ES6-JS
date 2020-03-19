@@ -13,6 +13,20 @@
         <ul id="set-list"></ul>
     </div>
 
+    <header>
+        <nav>
+            <div class="menu-area">
+                <ul class="menu-ul">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search-area">
+                <input type="text" name="search" id="search-box" placeholder="Search Item ..">
+            </div>
+        </nav>
+    </header>
+
     <div class="todo-box" id="todo-box">
         <h3 class="todo-title" id="todo-title">Add Items</h3>
         <form action="" id="todo-form">
@@ -31,10 +45,14 @@
             </select> -->
         </form>
         <div class="todo-item-list">
-            <h3 class="todo-title" id="item-list-count">Item List</h3>
+            <h3 class="todo-title" id="item-list-count">Item List (2)</h3>
             <ul class="todo-item-ul" id="todo-item-ul">
-                <li class="todo-item-li">Item One</li>
-                <li class="todo-item-li" id="todo-item-two">Item Two</li>
+                <li class="todo-item-li">Item One
+                    <button class="delete-btn">X</button>
+                </li>
+                <li class="todo-item-li" id="todo-item-two">Item Two
+                    <button class="delete-btn">X</button>
+                </li>
             </ul>
             <!-- <button class="todo-button focus-out mt-10" id="eventButton">
                 Click Here

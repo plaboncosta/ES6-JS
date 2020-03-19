@@ -21,6 +21,7 @@
 .focus-out:focus {
     outline: none;
     outline: 1px solid rgb(8, 83, 168);
+    border-radius: 5px;
 }
 
 #set-list {
@@ -153,4 +154,44 @@
 
   .event-check h3 {
       font-size: 28px;
+  }
+
+  .delete-btn {
+      background-color: red;
+      color: #fff;
+      border: none;
+      padding: 4px 8px;
+      float: right;
+  }
+
+  header nav {
+      display: flex;
+      justify-content: flex-end;
+      background-color: darkmagenta;
+      padding: 15px 12px;
+  }
+
+  header nav .menu-area {
+      margin-right: 3%;
+  }
+
+  header nav .menu-area ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+  }
+
+  header nav .menu-area ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 5px;
+    cursor: pointer;
+  }
+
+  .search-area input {
+    display: block;
+    padding: 6px;
+    border: 1px solid rgb(206, 198, 198);
+    border-radius: 5px;
   }

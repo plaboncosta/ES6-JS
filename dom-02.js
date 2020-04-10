@@ -2,9 +2,10 @@
 
 // ParentNode and ParentElement
 // let itemList = document.getElementById('todo-item-ul');
-// console.log(itemList.parentNode.parentNode.parentNode);
+// console.log(itemList.parentNode.parentNode);
 // itemList.parentNode.parentNode.style.backgroundColor = '#f4f4f4';
 // console.log(itemList.parentElement);
+// console.log(itemList.parentNode);
 // --> Parent Node and Parent Element is same thing
 
 // ChlidNode
@@ -12,6 +13,8 @@
 
 // Children
 // console.log(itemList.children);
+
+// for (let list of itemList.children) list.style.color = 'red';
 
 // console.log(itemList.firstChild);
 // console.log(itemList.firstElementChild);
@@ -39,7 +42,3 @@
 // let parentDiv = document.getElementById('todo-box');
 // let h3 = document.querySelector('#todo-box h3');
 // parentDiv.insertBefore(newDiv, h3);
-
-
-
-

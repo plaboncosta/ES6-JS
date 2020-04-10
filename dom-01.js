@@ -1,6 +1,6 @@
 "use strict";
 
-// console.dir(document); 
+// console.dir(document);
 // console.log(document.baseURI);
 // console.log(document.domain);
 // console.log(document.location);
@@ -13,8 +13,8 @@
 // console.log(document.all);
 // console.log(document.all[5]);
 // console.log(document.forms[0]);
-// console.log(document.links);
-// console.log(document.images[0]);
+// console.log(document.links[1]);
+// console.log(document.images);
 
 
 // Get Element By ID
@@ -27,6 +27,7 @@
 // title.style.color = 'red';
 
 
+
 // Get Elements By Class Name
 // let list = document.getElementsByClassName("todo-item-li");
 // console.log(list);
@@ -37,9 +38,7 @@
 // Will Show Error
 // list.style.backgroundColor = "#eee";
 
-// for(let item of list) {
-//     item.style.backgroundColor = "#eee";
-// }
+// for (let li of list) li.style.backgroundColor = '#eee';
 
 
 // Get Elements By Tag Name
@@ -71,16 +70,16 @@
 // let list = document.querySelector('.todo-item-li');
 // list.style.color = '#b4b4b4';
 
-// let lastList = document.querySelector('.todo-item-li:last-child'); 
+// let lastList = document.querySelector('.todo-item-li:last-child');
 // lastList.style.color = '#ccc';
 
-// let secondList = document.querySelector('.todo-item-li:nth-child(2)'); 
+// let secondList = document.querySelector('.todo-item-li:nth-child(2)');
 // secondList.style.color = 'coral';
 
-// let oddList = document.querySelectorAll('.todo-item-li:nth-child(odd)'); 
-// let evenList = document.querySelectorAll('.todo-item-li:nth-child(even)'); 
+// let oddList = document.querySelectorAll('.todo-item-li:nth-child(odd)');
+// let evenList = document.querySelectorAll('.todo-item-li:nth-child(even)');
 
-// for(let i = 0; i < oddList.length; i++) {
+// for (let i = 0; i < oddList.length; i++) {
 //     oddList[i].style.backgroundColor = '#f4f4f4';
 //     evenList[i].style.backgroundColor = '#ccc';
 // }

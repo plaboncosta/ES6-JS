@@ -64,4 +64,4 @@ const sortAgesDsc = ages.sort((a, b) => b - a);
 const totalAge = ages.reduce((total, number) => total + number, 0);
 const liveYears = companies.reduce((a, b) => a + (b.end - b.start), 0);
 
-console.log(liveYears);
+// console.log(liveYears);
